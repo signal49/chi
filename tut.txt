@@ -1,0 +1,43 @@
+Anthony GG - HTMX TEMPL Tailwind project template
+----------
+$mkdir chi
+$cd chi 
+<timestamp: 7:50>
+$touch Makefile
+$touch README.md 
+$touch .gitignore
+$mkdir cmd/app
+$touch cmd/app/main.go
+#base code for main.go
+----------
+
+package main
+import "fmt"
+func main(){
+    fmt.Println("Hello world!")
+}
+
+
+---------
+
+Edit main.go and Makefile files
+$make
+$go mod init chi
+$go get -u github.com/go-chi/chi/v5
+--------
+#github info
+…or create a new repository on the command line
+
+echo "# chi" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:signal49/chi.git
+git push -u origin main
+
+…or push an existing repository from the command line
+
+git remote add origin git@github.com:signal49/chi.git
+git branch -M main
+git push -u origin main
